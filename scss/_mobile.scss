@@ -11,6 +11,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 // Tablets & Small Laptops
 @include mediaMd {
   main {
@@ -22,6 +23,7 @@
       margin-bottom: 1rem;
     }
   }
+
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -32,6 +34,7 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
@@ -48,6 +51,7 @@
       height: 150px;
     }
   }
+
   .about-info {
     grid-template-areas:
       "bioimage"
@@ -58,7 +62,12 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 // Smartphones
 @include mediaSm {
   main {
